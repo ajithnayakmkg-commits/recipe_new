@@ -1,0 +1,288 @@
+/* ============================================================
+   INTELLIGENT WEB-BASED RECIPE GENERATOR
+   Palette is built around cold storage and fresh produce:
+   mist grey rooms, basil green actions, citrus for urgency.
+   ============================================================ */
+
+:root {
+  --mist:    #e9eeec;
+  --surface: #ffffff;
+  --ink:     #12211c;
+  --muted:   #5c6b65;
+  --line:    #c9d4cf;
+  --basil:   #1f6b4e;
+  --basil-d: #164e39;
+  --citrus:  #f0a202;
+  --chilli:  #bd3b32;
+
+  --radius: 10px;
+  --shadow: 0 1px 0 var(--line);
+  --wrap: 1120px;
+
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--mist);
+  color: var(--ink);
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: "Bricolage Grotesque", Inter, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin: 0 0 .5rem;
+}
+h1 { font-size: clamp(2.1rem, 5.2vw, 3.4rem); font-weight: 800; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
+h3 { font-size: 1.1rem; }
+p  { margin: 0 0 1rem; max-width: 66ch; }
+
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+.small { font-size: .85rem; color: var(--muted); }
+
+a { color: var(--basil-d); }
+:focus-visible { outline: 3px solid var(--citrus); outline-offset: 2px; }
+
+/* ----------------------------------------------------------- top bar --- */
+.topbar {
+  background: var(--ink);
+  color: #f2f6f4;
+  position: sticky; top: 0; z-index: 20;
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.topbar-inner { display: flex; align-items: center; gap: .7rem; height: 52px; }
+.mark {
+  width: 14px; height: 14px; border-radius: 3px;
+  background: var(--citrus);
+  box-shadow: 0 0 0 4px rgba(240,162,2,.18);
+}
+.brandname { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; }
+.status { margin-left: auto; font-size: .8rem; color: #9db3aa; }
+.status.ok  { color: #7fd6a9; }
+.status.bad { color: #ef8b83; }
+
+/* -------------------------------------------------------------- hero --- */
+.hero { background: var(--surface); border-bottom: 1px solid var(--line); }
+.hero-grid {
+  display: grid; gap: 2.5rem;
+  grid-template-columns: 1fr;
+  padding: 3rem 0 3.2rem;
+}
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr 1fr; align-items: center; }
+}
+.lede { font-size: 1.05rem; color: var(--muted); }
+
+.stat-row { display: flex; flex-wrap: wrap; gap: 2rem; margin: 1.8rem 0 0; }
+.stat-row dt { font-size: .78rem; color: var(--muted); margin-bottom: .1rem; }
+.stat-row dd {
+  margin: 0; font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.5rem; font-weight: 700;
+}
+
+/* ----------------------------------------------------------- capture --- */
+.capture {
+  background: var(--mist);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.capture-stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(180deg, #dbe3df 0 1px, transparent 1px 46px),
+    #e3eae6;
+  display: grid; place-items: center;
+}
+.capture-stage video,
+.capture-stage img,
+.capture-stage canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+}
+.capture-stage canvas { object-fit: contain; pointer-events: none; }
+.stage-empty { text-align: center; color: var(--muted); padding: 1rem; }
+.stage-empty p { margin: 0; }
+.stage-busy {
+  position: absolute; inset: auto 0 0 0;
+  background: rgba(18,33,28,.88); color: #fff;
+  padding: .55rem .9rem; font-size: .85rem;
+  display: flex; align-items: center; gap: .5rem;
+}
+.spinner {
+  width: 13px; height: 13px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.35); border-top-color: #fff;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 2s; } }
+
+.capture-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .9rem; }
+.hint { font-size: .8rem; color: var(--muted); margin: .6rem 0 0; }
+
+/* ----------------------------------------------------------- buttons --- */
+.btn {
+  font: inherit; font-weight: 500;
+  padding: .55rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn:hover { border-color: var(--basil); }
+.btn-primary { background: var(--basil); border-color: var(--basil); color: #fff; }
+.btn-primary:hover { background: var(--basil-d); border-color: var(--basil-d); }
+.btn-quiet { background: transparent; border-color: transparent; color: var(--muted); }
+.btn-big { padding: .7rem 1.6rem; font-size: 1rem; margin-top: 1.2rem; }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+/* ------------------------------------------------------------- bands --- */
+.band { padding: 2.8rem 0; border-bottom: 1px solid var(--line); }
+.band-alt { background: var(--surface); }
+.section-note { color: var(--muted); font-size: .92rem; }
+
+/* --------------------------------------------------------- ingredients --- */
+.add-row { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.1rem 0; }
+.add-row input[type=text] {
+  flex: 1 1 240px; font: inherit;
+  padding: .55rem .8rem;
+  border: 1px solid var(--line); border-radius: 7px; background: var(--surface);
+}
+
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; }
+.chip {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--basil);
+  border-radius: 6px;
+  padding: .35rem .5rem .35rem .65rem;
+  font-size: .92rem;
+}
+.chip[data-cat="fruit"]   { border-left-color: var(--citrus); }
+.chip[data-cat="protein"] { border-left-color: var(--chilli); }
+.chip[data-cat="dairy"]   { border-left-color: #6a8cc4; }
+.chip[data-cat="grain"]   { border-left-color: #b08a3e; }
+.chip-conf { font-size: .72rem; color: var(--muted); }
+.chip-x {
+  border: 0; background: none; cursor: pointer;
+  color: var(--muted); font-size: 1.05rem; line-height: 1; padding: 0 .1rem;
+}
+.chip-x:hover { color: var(--chilli); }
+.chips-empty { color: var(--muted); font-size: .92rem; }
+
+/* ---------------------------------------------------------- controls --- */
+.controls {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  margin-top: 1.2rem;
+}
+.controls label { display: flex; flex-direction: column; gap: .3rem; font-size: .85rem; color: var(--muted); }
+.controls input, .controls select {
+  font: inherit; color: var(--ink);
+  padding: .5rem .6rem;
+  border: 1px solid var(--line); border-radius: 7px; background: var(--surface);
+}
+
+/* ----------------------------------------------------------- recipes --- */
+.recipe-list { display: grid; gap: 1rem; margin-top: 1.2rem; }
+.empty-state { color: var(--muted); }
+
+.recipe {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.recipe-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+.recipe-head h3 { margin: 0; flex: 1 1 auto; }
+.meta { font-size: .82rem; color: var(--muted); }
+.score {
+  font-family: "Bricolage Grotesque", sans-serif; font-weight: 700;
+  background: var(--basil); color: #fff;
+  border-radius: 6px; padding: .15rem .5rem; font-size: .85rem;
+}
+.score.low { background: var(--citrus); color: var(--ink); }
+
+.recipe-body { padding: 1.1rem; display: grid; gap: 1.1rem; }
+@media (min-width: 760px) { .recipe-body { grid-template-columns: 1fr 1.3fr; } }
+.recipe-body h4 { margin: 0 0 .4rem; font-size: .8rem; color: var(--muted); font-weight: 600; }
+.ing-list, .step-list { margin: 0 0 1rem; padding-left: 1.1rem; }
+.ing-list li, .step-list li { margin-bottom: .3rem; }
+.missing { color: var(--chilli); }
+.sub-tip { font-size: .85rem; color: var(--muted); margin: .2rem 0; }
+
+.nutri { display: flex; flex-wrap: wrap; gap: 1.2rem; border-top: 1px solid var(--line); padding: .8rem 1.1rem; }
+.nutri div { font-size: .8rem; color: var(--muted); }
+.nutri b { display: block; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.05rem; color: var(--ink); }
+
+/* -------------------------------------------------------------- plan --- */
+.plan-out { margin-top: 1.5rem; display: grid; gap: 1rem; }
+.energy-box {
+  background: var(--ink); color: #eef3f0;
+  border-radius: var(--radius); padding: 1rem 1.1rem;
+  display: flex; flex-wrap: wrap; gap: 1.5rem;
+}
+.energy-box div { font-size: .8rem; color: #9db3aa; }
+.energy-box b { display: block; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.3rem; color: #fff; }
+
+.day-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem; }
+.day-card h3 { margin-bottom: .6rem; }
+.meal-row { display: flex; flex-wrap: wrap; gap: .6rem; align-items: baseline; padding: .45rem 0; border-top: 1px dashed var(--line); }
+.meal-slot { width: 90px; font-size: .8rem; color: var(--muted); }
+.meal-name { font-weight: 500; }
+.day-total { margin-top: .7rem; font-size: .85rem; color: var(--muted); }
+
+.shop-list { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem; }
+.shop-list ul { margin: .4rem 0 0; padding-left: 1.1rem; }
+
+/* -------------------------------------------------------------- team --- */
+.team { background: var(--surface); }
+.team-list {
+  list-style: none; counter-reset: member;
+  padding: 0; margin: 1.2rem 0 1.5rem;
+  display: grid; gap: .5rem; max-width: 520px;
+}
+.team-list li {
+  counter-increment: member;
+  display: flex; align-items: baseline; gap: .8rem;
+  border-bottom: 1px solid var(--line); padding-bottom: .5rem;
+}
+.team-list li::before {
+  content: counter(member); color: var(--muted); font-size: .8rem; width: 1rem;
+}
+.team-name { font-family: "Bricolage Grotesque", sans-serif; font-weight: 700; font-size: 1.05rem; }
+.team-usn { margin-left: auto; color: var(--muted); font-size: .85rem; }
+.guide { color: var(--muted); font-size: .9rem; }
+
+/* -------------------------------------------------------------- foot --- */
+.foot { padding: 2rem 0 3rem; color: var(--muted); font-size: .9rem; }
+
+/* ------------------------------------------------------------- toast --- */
+.toast {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(1.2rem + env(safe-area-inset-bottom, 0px));
+  background: var(--ink); color: #fff;
+  padding: .6rem 1rem; border-radius: 8px; font-size: .9rem;
+  z-index: 50; max-width: 90vw;
+}
+.toast.err { background: var(--chilli); }

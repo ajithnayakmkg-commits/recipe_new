@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Intelligent Web-Based Recipe Generator</title>
+<meta name="description" content="Point your camera at the fridge. Get recipes, portions and a diet plan from what is already there.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <span class="mark" aria-hidden="true"></span>
+    <span class="brandname">Fridge to Plate</span>
+    <span class="status" id="serverStatus">connecting&hellip;</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================ HERO / CAPTURE ============================ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <h1>Intelligent Web-Based Recipe Generator</h1>
+        <p class="lede">
+          Open the fridge, take one photo. The system finds the ingredients,
+          works out what you can cook tonight, scales it to the number of
+          people eating, and builds a diet plan around it.
+        </p>
+        <dl class="stat-row">
+          <div><dt>Recipes in dataset</dt><dd id="statRecipes">30</dd></div>
+          <div><dt>Ingredients tracked</dt><dd id="statIngredients">—</dd></div>
+          <div><dt>Detection</dt><dd id="statDetector">loading</dd></div>
+        </dl>
+      </div>
+
+      <div class="capture" id="captureCard">
+        <div class="capture-stage" id="stage">
+          <video id="video" playsinline muted autoplay hidden></video>
+          <canvas id="overlay" hidden></canvas>
+          <img id="preview" alt="Fridge photo you selected" hidden>
+          <div class="stage-empty" id="stageEmpty">
+            <p>No photo yet</p>
+            <p class="small">Use the camera or pick a picture of your fridge shelf.</p>
+          </div>
+          <div class="stage-busy" id="stageBusy" hidden><span class="spinner"></span> Reading the photo</div>
+        </div>
+
+        <div class="capture-actions">
+          <button class="btn btn-primary" id="btnCamera">Open camera</button>
+          <button class="btn" id="btnShoot" hidden>Take photo</button>
+          <button class="btn" id="btnStop" hidden>Close camera</button>
+          <label class="btn" for="fileInput">Choose photo</label>
+          <input type="file" id="fileInput" accept="image/*" capture="environment" hidden>
+        </div>
+        <p class="hint" id="captureHint">The camera needs a padlock (https) or localhost to start.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ INGREDIENTS ============================ -->
+  <section class="band" id="shelf">
+    <div class="wrap">
+      <h2>What the system found</h2>
+      <p class="section-note">Anything wrong or missing, fix it here. This list is what the recipes are built from.</p>
+
+      <form class="add-row" id="addForm" autocomplete="off">
+        <input type="text" id="addInput" list="ingredientList" placeholder="Add an ingredient, e.g. paneer" aria-label="Add an ingredient">
+        <datalist id="ingredientList"></datalist>
+        <button class="btn btn-primary" type="submit">Add</button>
+        <button class="btn btn-quiet" type="button" id="btnClear">Clear all</button>
+      </form>
+
+      <ul class="chips" id="chips" aria-live="polite">
+        <li class="chips-empty" id="chipsEmpty">Nothing on the shelf yet. Detect a photo or type an ingredient above.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ CONTROLS ============================ -->
+  <section class="band band-alt">
+    <div class="wrap">
+      <h2>Who is eating</h2>
+      <div class="controls">
+        <label>People at the table
+          <input type="number" id="servings" value="2" min="1" max="12">
+        </label>
+        <label>Diet
+          <select id="diet">
+            <option value="any">No restriction</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="eggetarian">Eggetarian</option>
+            <option value="high-protein">High protein</option>
+            <option value="low-carb">Low carb</option>
+            <option value="gluten-free">Gluten free</option>
+          </select>
+        </label>
+        <label>Meal
+          <select id="mealType">
+            <option value="">Any meal</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="snack">Snack</option>
+            <option value="dinner">Dinner</option>
+          </select>
+        </label>
+        <label>Max cooking time
+          <select id="maxTime">
+            <option value="">No limit</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+          </select>
+        </label>
+        <label>Avoid (allergies, dislikes)
+          <input type="text" id="exclude" placeholder="peanuts, mushroom">
+        </label>
+      </div>
+      <button class="btn btn-primary btn-big" id="btnFind">Find recipes</button>
+    </div>
+  </section>
+
+  <!-- ============================ RESULTS ============================ -->
+  <section class="band" id="results">
+    <div class="wrap">
+      <h2>Tonight you can cook</h2>
+      <div id="recipeList" class="recipe-list">
+        <p class="empty-state">Add some ingredients and press <strong>Find recipes</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DIET PLAN ============================ -->
+  <section class="band band-alt" id="plan">
+    <div class="wrap">
+      <h2>Diet plan</h2>
+      <p class="section-note">Fill in one person's details and the planner spreads the available food across the week.</p>
+      <div class="controls">
+        <label>Age <input type="number" id="pAge" value="21" min="12" max="90"></label>
+        <label>Sex
+          <select id="pSex"><option value="male">Male</option><option value="female">Female</option></select>
+        </label>
+        <label>Weight (kg) <input type="number" id="pWeight" value="65" min="25" max="200"></label>
+        <label>Height (cm) <input type="number" id="pHeight" value="170" min="120" max="220"></label>
+        <label>Activity
+          <select id="pActivity">
+            <option value="sedentary">Mostly sitting</option>
+            <option value="light">Light activity</option>
+            <option value="moderate" selected>Moderate</option>
+            <option value="active">Active</option>
+            <option value="very active">Very active</option>
+          </select>
+        </label>
+        <label>Goal
+          <select id="pGoal">
+            <option value="maintain">Stay the same</option>
+            <option value="lose">Lose weight slowly</option>
+            <option value="gain">Gain weight</option>
+          </select>
+        </label>
+        <label>Days <input type="number" id="pDays" value="3" min="1" max="7"></label>
+      </div>
+      <button class="btn btn-primary btn-big" id="btnPlan">Build the plan</button>
+      <div id="planOut" class="plan-out"></div>
+    </div>
+  </section>
+
+  <!-- ============================ TEAM ============================ -->
+  <section class="band team">
+    <div class="wrap">
+      <h2>Project team</h2>
+      <p class="section-note">Department of Computer Science and Engineering, SSSE, Tumakuru &middot; 2025&ndash;26</p>
+      <ol class="team-list">
+        <li><span class="team-name">Ajith Nayak M</span><span class="team-usn">USN:</span></li>
+        <li><span class="team-name">Balaji H M</span><span class="team-usn">USN:</span></li>
+        <li><span class="team-name">Basavaraj</span><span class="team-usn">USN:</span></li>
+        <li><span class="team-name">K Vinay</span><span class="team-usn">USN:</span></li>
+      </ol>
+      <p class="guide">Guide: ______________________ &nbsp;&nbsp; Head of Department: ______________________</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Intelligent Web-Based Recipe Generator &mdash; final year project, Dept of CSE, SSSE, Tumakuru.</p>
+    <p class="small">Calorie figures are estimates from a standard formula and the recipe dataset, not medical advice.</p>
+  </div>
+</footer>
+
+<!-- Browser-side detector (used when the Python server is not running YOLO) -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/detect.js"></script>
+<script src="js/offline-engine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

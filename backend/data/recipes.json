@@ -1,0 +1,856 @@
+[
+  {
+    "id": "R001",
+    "name": "Vegetable Pulao",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan"],
+    "time_minutes": 30,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 1, "unit": "cup"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "peas", "qty": 0.5, "unit": "cup"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "capsicum", "qty": 1, "unit": "medium"},
+      {"item": "ginger", "qty": 1, "unit": "tsp"},
+      {"item": "garlic", "qty": 3, "unit": "cloves"}
+    ],
+    "steps": [
+      "Rinse the rice twice and soak it for 15 minutes, then drain.",
+      "Heat oil in a pot and fry the sliced onion until golden.",
+      "Add ginger, garlic and the chopped carrot, peas and capsicum. Saute for 3 minutes.",
+      "Add the drained rice, 2 cups water and salt. Stir once.",
+      "Cover and cook on low heat for 12 minutes, then rest 5 minutes before fluffing."
+    ],
+    "nutrition_per_serving": {"calories": 340, "protein_g": 7, "carbs_g": 58, "fat_g": 9, "fiber_g": 5}
+  },
+  {
+    "id": "R002",
+    "name": "Paneer Butter Masala",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "high-protein"],
+    "time_minutes": 35,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "paneer", "qty": 200, "unit": "g"},
+      {"item": "tomato", "qty": 3, "unit": "medium"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "butter", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "cream", "qty": 2, "unit": "tbsp"},
+      {"item": "cashew", "qty": 8, "unit": "pieces"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"}
+    ],
+    "steps": [
+      "Boil the tomatoes, onion and cashews for 8 minutes, cool and blend to a smooth puree.",
+      "Melt butter in a pan, add garlic and fry for 30 seconds.",
+      "Pour in the puree with chilli powder, salt and a pinch of sugar. Simmer 10 minutes until the fat separates.",
+      "Add cubed paneer and cream, simmer 4 more minutes.",
+      "Finish with crushed kasuri methi and serve hot."
+    ],
+    "nutrition_per_serving": {"calories": 480, "protein_g": 22, "carbs_g": 18, "fat_g": 36, "fiber_g": 4}
+  },
+  {
+    "id": "R003",
+    "name": "Masala Omelette",
+    "cuisine": "Indian",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["eggetarian", "high-protein", "low-carb", "gluten-free"],
+    "time_minutes": 10,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "egg", "qty": 2, "unit": "pieces"},
+      {"item": "onion", "qty": 0.5, "unit": "medium"},
+      {"item": "tomato", "qty": 0.5, "unit": "medium"},
+      {"item": "oil", "qty": 1, "unit": "tsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "green chilli", "qty": 1, "unit": "piece"},
+      {"item": "coriander", "qty": 1, "unit": "tbsp"},
+      {"item": "cheese", "qty": 20, "unit": "g"}
+    ],
+    "steps": [
+      "Beat the eggs with salt, pepper and chopped coriander.",
+      "Stir in finely chopped onion, tomato and green chilli.",
+      "Heat oil in a non-stick pan and pour in the mixture.",
+      "Cook 2 minutes until the base sets, fold over and cook 1 more minute."
+    ],
+    "nutrition_per_serving": {"calories": 230, "protein_g": 14, "carbs_g": 6, "fat_g": 17, "fiber_g": 1}
+  },
+  {
+    "id": "R004",
+    "name": "Chicken Curry",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["non-vegetarian", "high-protein", "gluten-free"],
+    "time_minutes": 45,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "chicken", "qty": 500, "unit": "g"},
+      {"item": "onion", "qty": 2, "unit": "medium"},
+      {"item": "tomato", "qty": 2, "unit": "medium"},
+      {"item": "garlic", "qty": 5, "unit": "cloves"},
+      {"item": "oil", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "yogurt", "qty": 3, "unit": "tbsp"},
+      {"item": "ginger", "qty": 1, "unit": "tbsp"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Marinate the chicken with yogurt, turmeric, chilli powder and salt for 20 minutes.",
+      "Fry sliced onions in oil until deep brown, then add ginger and garlic.",
+      "Add chopped tomatoes and cook until soft and pulpy.",
+      "Add the chicken and sear on high heat for 5 minutes.",
+      "Pour in 1 cup hot water, cover and simmer 20 minutes. Garnish with coriander."
+    ],
+    "nutrition_per_serving": {"calories": 420, "protein_g": 38, "carbs_g": 12, "fat_g": 24, "fiber_g": 3}
+  },
+  {
+    "id": "R005",
+    "name": "Tomato Rasam",
+    "cuisine": "South Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free", "low-calorie"],
+    "time_minutes": 25,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "tomato", "qty": 3, "unit": "medium"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "tamarind", "qty": 1, "unit": "tsp"},
+      {"item": "oil", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "toor dal", "qty": 2, "unit": "tbsp"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Crush the tomatoes and garlic roughly and add to 3 cups water with tamarind pulp and salt.",
+      "Add rasam powder and boil for 10 minutes until the raw smell goes.",
+      "Stir in cooked toor dal if using and simmer 3 minutes.",
+      "Temper mustard seeds and curry leaves in oil and pour over the rasam."
+    ],
+    "nutrition_per_serving": {"calories": 90, "protein_g": 3, "carbs_g": 12, "fat_g": 4, "fiber_g": 2}
+  },
+  {
+    "id": "R006",
+    "name": "Vegetable Fried Rice",
+    "cuisine": "Chinese",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 2, "unit": "cup"},
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "cabbage", "qty": 1, "unit": "cup"},
+      {"item": "spring onion", "qty": 2, "unit": "stalks"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "capsicum", "qty": 1, "unit": "medium"},
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "garlic", "qty": 3, "unit": "cloves"}
+    ],
+    "steps": [
+      "Use cold, day-old cooked rice so the grains stay separate.",
+      "Heat oil on the highest flame and fry chopped garlic for 20 seconds.",
+      "Add the julienned carrot, cabbage and capsicum. Stir-fry 3 minutes, keeping them crunchy.",
+      "Add the rice, soy sauce, salt and pepper. Toss for 3 minutes.",
+      "Finish with chopped spring onion greens."
+    ],
+    "nutrition_per_serving": {"calories": 360, "protein_g": 8, "carbs_g": 62, "fat_g": 10, "fiber_g": 4}
+  },
+  {
+    "id": "R007",
+    "name": "Banana Oats Smoothie",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "high-fibre", "quick"],
+    "time_minutes": 5,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "banana", "qty": 1, "unit": "piece"},
+      {"item": "oats", "qty": 0.3, "unit": "cup"},
+      {"item": "milk", "qty": 1, "unit": "cup"}
+    ],
+    "optional_ingredients": [
+      {"item": "honey", "qty": 1, "unit": "tsp"},
+      {"item": "peanut butter", "qty": 1, "unit": "tbsp"},
+      {"item": "cinnamon", "qty": 0.25, "unit": "tsp"}
+    ],
+    "steps": [
+      "Soak the oats in a little milk for 5 minutes so they blend smoothly.",
+      "Add the banana, remaining milk, honey and peanut butter to a blender.",
+      "Blend for 45 seconds until creamy and pour into a tall glass."
+    ],
+    "nutrition_per_serving": {"calories": 330, "protein_g": 12, "carbs_g": 55, "fat_g": 8, "fiber_g": 6}
+  },
+  {
+    "id": "R008",
+    "name": "Aloo Paratha",
+    "cuisine": "North Indian",
+    "meal_type": ["breakfast", "lunch"],
+    "diet_tags": ["vegetarian"],
+    "time_minutes": 40,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "potato", "qty": 3, "unit": "medium"},
+      {"item": "wheat flour", "qty": 2, "unit": "cup"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "green chilli", "qty": 2, "unit": "pieces"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"},
+      {"item": "yogurt", "qty": 0.5, "unit": "cup"}
+    ],
+    "steps": [
+      "Knead the flour with water and a little oil into a soft dough. Rest 20 minutes.",
+      "Boil, peel and mash the potatoes. Mix with chopped onion, chilli, coriander, salt and spices.",
+      "Roll a ball of dough, place the filling in the centre, seal and roll out gently.",
+      "Cook on a hot tawa with oil on both sides until golden brown spots appear.",
+      "Serve with yogurt or pickle."
+    ],
+    "nutrition_per_serving": {"calories": 450, "protein_g": 11, "carbs_g": 72, "fat_g": 14, "fiber_g": 7}
+  },
+  {
+    "id": "R009",
+    "name": "Chana Masala",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "high-protein", "high-fibre"],
+    "time_minutes": 30,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "chickpeas", "qty": 2, "unit": "cup"},
+      {"item": "onion", "qty": 2, "unit": "medium"},
+      {"item": "tomato", "qty": 2, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "ginger", "qty": 1, "unit": "tbsp"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "lemon", "qty": 0.5, "unit": "piece"}
+    ],
+    "steps": [
+      "Soak dried chickpeas overnight and pressure-cook 5 whistles, or use canned chickpeas.",
+      "Fry chopped onion until brown, add ginger-garlic and cook 1 minute.",
+      "Add tomatoes, coriander powder, chilli powder and garam masala. Cook until thick.",
+      "Add the chickpeas with a cup of their cooking water. Simmer 12 minutes.",
+      "Mash a few chickpeas to thicken the gravy and squeeze lemon over."
+    ],
+    "nutrition_per_serving": {"calories": 310, "protein_g": 15, "carbs_g": 44, "fat_g": 9, "fiber_g": 12}
+  },
+  {
+    "id": "R010",
+    "name": "Grilled Chicken Salad",
+    "cuisine": "Continental",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["non-vegetarian", "high-protein", "low-carb", "gluten-free"],
+    "time_minutes": 25,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "chicken", "qty": 300, "unit": "g"},
+      {"item": "lettuce", "qty": 2, "unit": "cup"},
+      {"item": "tomato", "qty": 1, "unit": "medium"},
+      {"item": "cucumber", "qty": 1, "unit": "medium"},
+      {"item": "olive oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "lemon", "qty": 1, "unit": "piece"},
+      {"item": "onion", "qty": 0.5, "unit": "medium"},
+      {"item": "cheese", "qty": 30, "unit": "g"}
+    ],
+    "steps": [
+      "Flatten the chicken breast, rub with salt, pepper, lemon juice and a little oil.",
+      "Grill on a hot pan for 6 minutes per side, then rest 5 minutes and slice.",
+      "Toss torn lettuce, diced tomato, cucumber and onion in a bowl.",
+      "Whisk olive oil, lemon juice, salt and pepper into a dressing and pour over.",
+      "Top with the sliced chicken and crumbled cheese."
+    ],
+    "nutrition_per_serving": {"calories": 340, "protein_g": 36, "carbs_g": 9, "fat_g": 18, "fiber_g": 3}
+  },
+  {
+    "id": "R011",
+    "name": "Vegetable Upma",
+    "cuisine": "South Indian",
+    "meal_type": ["breakfast"],
+    "diet_tags": ["vegetarian", "vegan"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "semolina", "qty": 1, "unit": "cup"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "peas", "qty": 0.25, "unit": "cup"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "ginger", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Dry-roast the semolina on low heat for 4 minutes until it smells nutty. Set aside.",
+      "Temper mustard seeds and curry leaves in oil, add onion, ginger and green chilli.",
+      "Add the chopped carrot and peas, cook 3 minutes, then pour in 2.5 cups hot water with salt.",
+      "When it boils, lower the flame and pour in the semolina in a steady stream while stirring.",
+      "Cover and steam 3 minutes until fluffy."
+    ],
+    "nutrition_per_serving": {"calories": 300, "protein_g": 8, "carbs_g": 48, "fat_g": 10, "fiber_g": 4}
+  },
+  {
+    "id": "R012",
+    "name": "Pasta in Tomato Sauce",
+    "cuisine": "Italian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian"],
+    "time_minutes": 25,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "pasta", "qty": 200, "unit": "g"},
+      {"item": "tomato", "qty": 4, "unit": "medium"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "olive oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "cheese", "qty": 40, "unit": "g"},
+      {"item": "basil", "qty": 6, "unit": "leaves"},
+      {"item": "onion", "qty": 1, "unit": "medium"}
+    ],
+    "steps": [
+      "Boil the pasta in salted water until just firm to the bite. Save half a cup of the water.",
+      "Blanch and blend the tomatoes into a puree.",
+      "Fry sliced garlic and onion in olive oil, add the puree, salt, pepper and chilli flakes.",
+      "Simmer 12 minutes until it thickens, then add the pasta and a splash of pasta water.",
+      "Toss well and finish with cheese and torn basil."
+    ],
+    "nutrition_per_serving": {"calories": 420, "protein_g": 14, "carbs_g": 68, "fat_g": 12, "fiber_g": 6}
+  },
+  {
+    "id": "R013",
+    "name": "Egg Fried Rice",
+    "cuisine": "Chinese",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["eggetarian", "high-protein"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 2, "unit": "cup"},
+      {"item": "egg", "qty": 3, "unit": "pieces"},
+      {"item": "spring onion", "qty": 2, "unit": "stalks"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "garlic", "qty": 2, "unit": "cloves"}
+    ],
+    "steps": [
+      "Scramble the beaten eggs in hot oil, break them up and remove from the pan.",
+      "Add more oil, fry garlic and diced carrot for 2 minutes.",
+      "Add cold cooked rice, soy sauce, salt and white pepper. Toss on high heat 3 minutes.",
+      "Return the egg, add spring onion and toss once more."
+    ],
+    "nutrition_per_serving": {"calories": 430, "protein_g": 17, "carbs_g": 60, "fat_g": 14, "fiber_g": 3}
+  },
+  {
+    "id": "R014",
+    "name": "Palak Dal",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "high-protein", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "toor dal", "qty": 1, "unit": "cup"},
+      {"item": "spinach", "qty": 2, "unit": "cup"},
+      {"item": "tomato", "qty": 1, "unit": "medium"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "oil", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "cumin", "qty": 1, "unit": "tsp"},
+      {"item": "lemon", "qty": 0.5, "unit": "piece"}
+    ],
+    "steps": [
+      "Pressure-cook the dal with turmeric, salt and 3 cups water for 3 whistles.",
+      "Chop the spinach finely and stir it into the hot dal. Simmer 5 minutes.",
+      "Temper cumin, garlic and chopped tomato in oil until soft.",
+      "Pour the tempering into the dal, simmer 3 minutes and finish with lemon juice."
+    ],
+    "nutrition_per_serving": {"calories": 260, "protein_g": 16, "carbs_g": 36, "fat_g": 6, "fiber_g": 9}
+  },
+  {
+    "id": "R015",
+    "name": "Cheese Vegetable Sandwich",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "quick"],
+    "time_minutes": 10,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "bread", "qty": 2, "unit": "slices"},
+      {"item": "cheese", "qty": 30, "unit": "g"},
+      {"item": "tomato", "qty": 0.5, "unit": "medium"},
+      {"item": "cucumber", "qty": 0.5, "unit": "medium"},
+      {"item": "butter", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "onion", "qty": 0.25, "unit": "medium"},
+      {"item": "capsicum", "qty": 0.25, "unit": "medium"},
+      {"item": "lettuce", "qty": 2, "unit": "leaves"}
+    ],
+    "steps": [
+      "Butter both slices of bread on the inner side.",
+      "Layer thin slices of tomato, cucumber, onion and capsicum, sprinkling salt and pepper.",
+      "Add the cheese slice and close the sandwich.",
+      "Toast in a pan or griller for 3 minutes until the cheese melts."
+    ],
+    "nutrition_per_serving": {"calories": 380, "protein_g": 14, "carbs_g": 38, "fat_g": 20, "fiber_g": 4}
+  },
+  {
+    "id": "R016",
+    "name": "Fish Fry",
+    "cuisine": "Coastal Indian",
+    "meal_type": ["lunch", "dinner", "snack"],
+    "diet_tags": ["non-vegetarian", "high-protein", "low-carb"],
+    "time_minutes": 25,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "fish", "qty": 400, "unit": "g"},
+      {"item": "rice flour", "qty": 3, "unit": "tbsp"},
+      {"item": "lemon", "qty": 1, "unit": "piece"},
+      {"item": "oil", "qty": 4, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "ginger", "qty": 1, "unit": "tsp"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "curry leaves", "qty": 10, "unit": "leaves"}
+    ],
+    "steps": [
+      "Make a paste of chilli powder, turmeric, ginger-garlic, salt and lemon juice.",
+      "Coat the fish and marinate for 20 minutes in the fridge.",
+      "Dust the pieces with rice flour for a crisp crust.",
+      "Shallow-fry on medium heat 4 minutes per side until golden.",
+      "Fry curry leaves in the same oil and scatter over the fish."
+    ],
+    "nutrition_per_serving": {"calories": 390, "protein_g": 40, "carbs_g": 12, "fat_g": 21, "fiber_g": 1}
+  },
+  {
+    "id": "R017",
+    "name": "Mixed Fruit Bowl",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free", "low-calorie", "quick"],
+    "time_minutes": 8,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "apple", "qty": 1, "unit": "piece"},
+      {"item": "banana", "qty": 1, "unit": "piece"},
+      {"item": "orange", "qty": 1, "unit": "piece"}
+    ],
+    "optional_ingredients": [
+      {"item": "yogurt", "qty": 0.5, "unit": "cup"},
+      {"item": "honey", "qty": 1, "unit": "tsp"},
+      {"item": "chia seeds", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Dice the apple and banana, segment the orange.",
+      "Toss everything gently in a bowl with a squeeze of lemon so the apple does not brown.",
+      "Top with yogurt, honey and chia seeds."
+    ],
+    "nutrition_per_serving": {"calories": 260, "protein_g": 5, "carbs_g": 58, "fat_g": 2, "fiber_g": 9}
+  },
+  {
+    "id": "R018",
+    "name": "Aloo Gobi",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "potato", "qty": 2, "unit": "medium"},
+      {"item": "cauliflower", "qty": 1, "unit": "small"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "tomato", "qty": 1, "unit": "medium"},
+      {"item": "ginger", "qty": 1, "unit": "tsp"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Cut the potato into cubes and the cauliflower into medium florets.",
+      "Fry cumin seeds in oil, add onion and ginger, cook until soft.",
+      "Add turmeric, chilli powder and the potato. Cover and cook 6 minutes.",
+      "Add the cauliflower and salt, cover and cook 12 minutes on low, stirring gently.",
+      "Sprinkle garam masala and coriander before serving."
+    ],
+    "nutrition_per_serving": {"calories": 230, "protein_g": 6, "carbs_g": 30, "fat_g": 11, "fiber_g": 6}
+  },
+  {
+    "id": "R019",
+    "name": "Curd Rice",
+    "cuisine": "South Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "gluten-free", "quick"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 1.5, "unit": "cup"},
+      {"item": "yogurt", "qty": 1.5, "unit": "cup"},
+      {"item": "milk", "qty": 0.25, "unit": "cup"},
+      {"item": "oil", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "ginger", "qty": 1, "unit": "tsp"},
+      {"item": "pomegranate", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Mash the cooked rice slightly while warm and let it cool.",
+      "Mix in the yogurt, milk and salt until creamy.",
+      "Temper mustard seeds, curry leaves, green chilli and ginger in oil.",
+      "Stir the tempering through and top with pomegranate."
+    ],
+    "nutrition_per_serving": {"calories": 320, "protein_g": 10, "carbs_g": 52, "fat_g": 8, "fiber_g": 2}
+  },
+  {
+    "id": "R020",
+    "name": "Mushroom Stir Fry",
+    "cuisine": "Asian",
+    "meal_type": ["lunch", "dinner", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "low-carb", "quick"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "mushroom", "qty": 250, "unit": "g"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "capsicum", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "spring onion", "qty": 2, "unit": "stalks"},
+      {"item": "butter", "qty": 1, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Wipe the mushrooms clean and halve them. Do not wash them in water.",
+      "Heat oil until shimmering and add the mushrooms in a single layer. Leave them undisturbed 3 minutes to brown.",
+      "Add garlic and sliced capsicum, toss 2 minutes.",
+      "Season with soy sauce, pepper and butter, then finish with spring onion."
+    ],
+    "nutrition_per_serving": {"calories": 180, "protein_g": 7, "carbs_g": 10, "fat_g": 13, "fiber_g": 3}
+  },
+  {
+    "id": "R021",
+    "name": "Oats Porridge with Apple",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast"],
+    "diet_tags": ["vegetarian", "high-fibre", "quick"],
+    "time_minutes": 12,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "oats", "qty": 0.5, "unit": "cup"},
+      {"item": "milk", "qty": 1, "unit": "cup"},
+      {"item": "apple", "qty": 1, "unit": "piece"}
+    ],
+    "optional_ingredients": [
+      {"item": "honey", "qty": 1, "unit": "tsp"},
+      {"item": "cinnamon", "qty": 0.25, "unit": "tsp"},
+      {"item": "almonds", "qty": 6, "unit": "pieces"}
+    ],
+    "steps": [
+      "Simmer the oats in milk with a pinch of salt for 6 minutes, stirring often.",
+      "Grate half the apple into the pot and dice the rest for the top.",
+      "Add cinnamon and honey, cook 2 more minutes.",
+      "Serve topped with diced apple and chopped almonds."
+    ],
+    "nutrition_per_serving": {"calories": 340, "protein_g": 12, "carbs_g": 56, "fat_g": 8, "fiber_g": 8}
+  },
+  {
+    "id": "R022",
+    "name": "Rajma Masala",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "high-protein", "high-fibre", "gluten-free"],
+    "time_minutes": 40,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "kidney beans", "qty": 1.5, "unit": "cup"},
+      {"item": "onion", "qty": 2, "unit": "medium"},
+      {"item": "tomato", "qty": 3, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "ginger", "qty": 1, "unit": "tbsp"},
+      {"item": "garlic", "qty": 5, "unit": "cloves"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Soak the beans overnight and pressure-cook with salt for 6 whistles until very soft.",
+      "Blend the onion, tomato, ginger and garlic into a paste.",
+      "Cook the paste in oil for 12 minutes until it darkens and the oil separates.",
+      "Add spices, then the beans with their water. Simmer 15 minutes.",
+      "Mash some beans against the pan to thicken and garnish with coriander."
+    ],
+    "nutrition_per_serving": {"calories": 330, "protein_g": 17, "carbs_g": 48, "fat_g": 8, "fiber_g": 14}
+  },
+  {
+    "id": "R023",
+    "name": "Scrambled Eggs on Toast",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast"],
+    "diet_tags": ["eggetarian", "high-protein", "quick"],
+    "time_minutes": 10,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "egg", "qty": 3, "unit": "pieces"},
+      {"item": "bread", "qty": 2, "unit": "slices"},
+      {"item": "butter", "qty": 1, "unit": "tbsp"},
+      {"item": "milk", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "cheese", "qty": 20, "unit": "g"},
+      {"item": "spring onion", "qty": 1, "unit": "stalk"},
+      {"item": "tomato", "qty": 0.5, "unit": "medium"}
+    ],
+    "steps": [
+      "Beat the eggs with milk, salt and pepper.",
+      "Melt butter in a cold pan on low heat and pour in the eggs.",
+      "Stir slowly and constantly for 3 minutes, taking the pan off heat when still slightly wet.",
+      "Toast the bread and pile the eggs on top with cheese and spring onion."
+    ],
+    "nutrition_per_serving": {"calories": 420, "protein_g": 24, "carbs_g": 30, "fat_g": 23, "fiber_g": 3}
+  },
+  {
+    "id": "R024",
+    "name": "Cabbage Poriyal",
+    "cuisine": "South Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free", "low-calorie"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "cabbage", "qty": 3, "unit": "cup"},
+      {"item": "coconut", "qty": 0.25, "unit": "cup"},
+      {"item": "oil", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "green chilli", "qty": 2, "unit": "pieces"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "urad dal", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Shred the cabbage finely.",
+      "Temper mustard seeds, urad dal, curry leaves and chilli in oil.",
+      "Add the cabbage and salt, sprinkle 2 tbsp water, cover and cook 8 minutes on low.",
+      "Stir in grated coconut and cook uncovered 2 minutes."
+    ],
+    "nutrition_per_serving": {"calories": 120, "protein_g": 3, "carbs_g": 12, "fat_g": 7, "fiber_g": 5}
+  },
+  {
+    "id": "R025",
+    "name": "Chicken Fried Rice",
+    "cuisine": "Chinese",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["non-vegetarian", "high-protein"],
+    "time_minutes": 25,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 2, "unit": "cup"},
+      {"item": "chicken", "qty": 200, "unit": "g"},
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "spring onion", "qty": 2, "unit": "stalks"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "egg", "qty": 1, "unit": "piece"},
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "capsicum", "qty": 1, "unit": "medium"}
+    ],
+    "steps": [
+      "Dice the chicken small and stir-fry in hot oil with salt and pepper until cooked. Remove.",
+      "Scramble the egg in the same pan and remove.",
+      "Fry the diced carrot and capsicum 2 minutes on high heat.",
+      "Add the cold rice, soy sauce and pepper. Toss 3 minutes.",
+      "Return the chicken and egg, add spring onion and toss once."
+    ],
+    "nutrition_per_serving": {"calories": 490, "protein_g": 30, "carbs_g": 62, "fat_g": 14, "fiber_g": 4}
+  },
+  {
+    "id": "R026",
+    "name": "Tomato Cucumber Raita",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner", "snack"],
+    "diet_tags": ["vegetarian", "gluten-free", "low-calorie", "quick"],
+    "time_minutes": 8,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "yogurt", "qty": 1, "unit": "cup"},
+      {"item": "cucumber", "qty": 1, "unit": "medium"},
+      {"item": "tomato", "qty": 1, "unit": "medium"}
+    ],
+    "optional_ingredients": [
+      {"item": "onion", "qty": 0.5, "unit": "medium"},
+      {"item": "coriander", "qty": 1, "unit": "tbsp"},
+      {"item": "cumin", "qty": 0.5, "unit": "tsp"}
+    ],
+    "steps": [
+      "Whisk the yogurt smooth with salt and roasted cumin powder.",
+      "Finely chop the cucumber, tomato and onion and squeeze out excess water.",
+      "Fold them into the yogurt and chill for 10 minutes.",
+      "Garnish with coriander."
+    ],
+    "nutrition_per_serving": {"calories": 110, "protein_g": 6, "carbs_g": 12, "fat_g": 4, "fiber_g": 2}
+  },
+  {
+    "id": "R027",
+    "name": "Paneer Bhurji",
+    "cuisine": "Indian",
+    "meal_type": ["breakfast", "dinner"],
+    "diet_tags": ["vegetarian", "high-protein", "low-carb", "gluten-free"],
+    "time_minutes": 18,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "paneer", "qty": 200, "unit": "g"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "tomato", "qty": 2, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "capsicum", "qty": 0.5, "unit": "medium"},
+      {"item": "green chilli", "qty": 1, "unit": "piece"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Crumble the paneer coarsely with your hands.",
+      "Fry chopped onion, chilli and capsicum in oil until soft.",
+      "Add tomatoes, turmeric, chilli powder and salt. Cook until the tomatoes break down.",
+      "Add the paneer, toss for 3 minutes on low heat and finish with coriander."
+    ],
+    "nutrition_per_serving": {"calories": 370, "protein_g": 21, "carbs_g": 14, "fat_g": 27, "fiber_g": 3}
+  },
+  {
+    "id": "R028",
+    "name": "Lemon Rice",
+    "cuisine": "South Indian",
+    "meal_type": ["lunch", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free", "quick"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 2, "unit": "cup"},
+      {"item": "lemon", "qty": 1, "unit": "piece"},
+      {"item": "peanuts", "qty": 3, "unit": "tbsp"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "curry leaves", "qty": 10, "unit": "leaves"},
+      {"item": "green chilli", "qty": 2, "unit": "pieces"},
+      {"item": "ginger", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Spread the cooked rice on a plate to cool so the grains stay separate.",
+      "Fry peanuts in oil until golden, then add mustard seeds, curry leaves, chilli and ginger.",
+      "Turn off the heat, add turmeric and salt, then squeeze in the lemon juice.",
+      "Pour over the rice and fold gently until evenly coloured."
+    ],
+    "nutrition_per_serving": {"calories": 390, "protein_g": 9, "carbs_g": 60, "fat_g": 14, "fiber_g": 3}
+  },
+  {
+    "id": "R029",
+    "name": "Vegetable Soup",
+    "cuisine": "Continental",
+    "meal_type": ["dinner", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "low-calorie", "gluten-free"],
+    "time_minutes": 25,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "cabbage", "qty": 1, "unit": "cup"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "garlic", "qty": 3, "unit": "cloves"}
+    ],
+    "optional_ingredients": [
+      {"item": "sweet corn", "qty": 0.25, "unit": "cup"},
+      {"item": "butter", "qty": 1, "unit": "tbsp"},
+      {"item": "spring onion", "qty": 1, "unit": "stalk"}
+    ],
+    "steps": [
+      "Dice all the vegetables into small even pieces.",
+      "Saute garlic and onion in butter for 2 minutes.",
+      "Add the rest of the vegetables with 3 cups water, salt and pepper.",
+      "Simmer 15 minutes, then thicken with 1 tsp cornflour mixed in cold water if you like."
+    ],
+    "nutrition_per_serving": {"calories": 110, "protein_g": 3, "carbs_g": 16, "fat_g": 4, "fiber_g": 4}
+  },
+  {
+    "id": "R030",
+    "name": "Banana Pancakes",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "eggetarian"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "banana", "qty": 2, "unit": "pieces"},
+      {"item": "egg", "qty": 2, "unit": "pieces"},
+      {"item": "wheat flour", "qty": 0.75, "unit": "cup"},
+      {"item": "milk", "qty": 0.5, "unit": "cup"},
+      {"item": "butter", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "honey", "qty": 2, "unit": "tsp"},
+      {"item": "cinnamon", "qty": 0.5, "unit": "tsp"},
+      {"item": "oats", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Mash the bananas and whisk with the eggs and milk.",
+      "Fold in the flour, cinnamon, a pinch of salt and baking powder. Rest the batter 5 minutes.",
+      "Ladle onto a buttered pan on medium-low heat.",
+      "Flip when bubbles appear on the surface and cook 1 more minute. Serve with honey."
+    ],
+    "nutrition_per_serving": {"calories": 410, "protein_g": 14, "carbs_g": 62, "fat_g": 12, "fiber_g": 6}
+  }
+]

@@ -1,0 +1,10 @@
+# Core backend - always needed
+Flask==3.0.3
+flask-cors==4.0.1
+gunicorn==22.0.0
+
+# Optional: server-side YOLO detection.
+# Skip these two lines if you only want browser-side detection
+# (the app runs fine without them).
+ultralytics==8.3.0
+pillow==10.4.0
