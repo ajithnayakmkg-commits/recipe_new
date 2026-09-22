@@ -852,5 +852,856 @@
       "Flip when bubbles appear on the surface and cook 1 more minute. Serve with honey."
     ],
     "nutrition_per_serving": {"calories": 410, "protein_g": 14, "carbs_g": 62, "fat_g": 12, "fiber_g": 6}
+  },
+  {
+    "id": "R031",
+    "name": "Dal Tadka",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "high-protein", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "toor dal", "qty": 1, "unit": "cup"},
+      {"item": "tomato", "qty": 1, "unit": "medium"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "cumin", "qty": 1, "unit": "tsp"},
+      {"item": "coriander", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Pressure-cook toor dal with turmeric and 3 cups of water for 3 whistles.",
+      "In a pan, heat oil and splutter cumin seeds, followed by minced garlic and sliced onions.",
+      "Add chopped tomatoes, salt, and chilli powder, cooking until soft.",
+      "Pour the cooked dal into the tempering, simmer for 5 minutes, and garnish with coriander."
+    ],
+    "nutrition_per_serving": {"calories": 250, "protein_g": 14, "carbs_g": 35, "fat_g": 6, "fiber_g": 8}
+  },
+  {
+    "id": "R032",
+    "name": "Vegetable Biryani",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "gluten-free"],
+    "time_minutes": 45,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "rice", "qty": 1.5, "unit": "cup"},
+      {"item": "mixed vegetables", "qty": 2, "unit": "cup"},
+      {"item": "onion", "qty": 2, "unit": "medium"},
+      {"item": "ghee", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "yogurt", "qty": 0.5, "unit": "cup"},
+      {"item": "mint leaves", "qty": 0.25, "unit": "cup"},
+      {"item": "cashew", "qty": 10, "unit": "pieces"}
+    ],
+    "steps": [
+      "Parboil the rice with whole spices until 70% cooked and drain.",
+      "Sauté sliced onions in ghee until golden brown, then add mixed vegetables and spices.",
+      "Layer the partially cooked rice over the vegetable masala, cover tightly, and simmer on low for 15 minutes.",
+      "Gently fluff and serve warm with raita."
+    ],
+    "nutrition_per_serving": {"calories": 410, "protein_g": 8, "carbs_g": 68, "fat_g": 11, "fiber_g": 5}
+  },
+  {
+    "id": "R033",
+    "name": "Poha",
+    "cuisine": "Indian",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free", "quick"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "flattened rice", "qty": 2, "unit": "cup"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "peanuts", "qty": 2, "unit": "tbsp"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "green chilli", "qty": 2, "unit": "pieces"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "lemon", "qty": 0.5, "unit": "piece"}
+    ],
+    "steps": [
+      "Rinse flattened rice in a colander until soft, drain completely, and set aside.",
+      "Heat oil in a pan, fry peanuts until crisp, then add mustard seeds, curry leaves, and green chillies.",
+      "Sauté chopped onions until translucent, add turmeric and salt.",
+      "Toss in the flattened rice, mix gently on low heat for 3 minutes, and finish with lemon juice."
+    ],
+    "nutrition_per_serving": {"calories": 280, "protein_g": 6, "carbs_g": 48, "fat_g": 8, "fiber_g": 3}
+  },
+  {
+    "id": "R034",
+    "name": "Butter Chicken",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["non-vegetarian", "high-protein"],
+    "time_minutes": 40,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "chicken", "qty": 500, "unit": "g"},
+      {"item": "tomato puree", "qty": 1.5, "unit": "cup"},
+      {"item": "butter", "qty": 3, "unit": "tbsp"},
+      {"item": "cream", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "yogurt", "qty": 0.25, "unit": "cup"},
+      {"item": "ginger garlic paste", "qty": 1, "unit": "tbsp"},
+      {"item": "kasuri methi", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Marinate chicken with yogurt, ginger-garlic paste, and spices for 15 minutes, then pan-sear until done.",
+      "Melt butter in a separate pan, add tomato puree, and simmer until thick.",
+      "Stir in cream, cooked chicken, and crushed kasuri methi.",
+      "Simmer for 5 minutes before serving hot."
+    ],
+    "nutrition_per_serving": {"calories": 490, "protein_g": 35, "carbs_g": 10, "fat_g": 34, "fiber_g": 2}
+  },
+  {
+    "id": "R035",
+    "name": "Greek Salad",
+    "cuisine": "Continental",
+    "meal_type": ["lunch", "snack"],
+    "diet_tags": ["vegetarian", "low-carb", "gluten-free", "quick"],
+    "time_minutes": 10,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "cucumber", "qty": 1, "unit": "medium"},
+      {"item": "tomato", "qty": 2, "unit": "medium"},
+      {"item": "feta cheese", "qty": 50, "unit": "g"},
+      {"item": "olive oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "onion", "qty": 0.5, "unit": "medium"},
+      {"item": "olives", "qty": 10, "unit": "pieces"},
+      {"item": "oregano", "qty": 0.5, "unit": "tsp"}
+    ],
+    "steps": [
+      "Chop cucumbers, tomatoes, and red onion into chunky pieces.",
+      "Combine them in a bowl with olives.",
+      "Drizzle with olive oil, lemon juice, and oregano.",
+      "Top with crumbled feta cheese and serve immediately."
+    ],
+    "nutrition_per_serving": {"calories": 220, "protein_g": 6, "carbs_g": 9, "fat_g": 18, "fiber_g": 2}
+  },
+  {
+    "id": "R036",
+    "name": "Veg Hakka Noodles",
+    "cuisine": "Chinese",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "noodles", "qty": 150, "unit": "g"},
+      {"item": "cabbage", "qty": 1, "unit": "cup"},
+      {"item": "capsicum", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "vinegar", "qty": 1, "unit": "tsp"},
+      {"item": "garlic", "qty": 3, "unit": "cloves"}
+    ],
+    "steps": [
+      "Boil noodles according to package instructions, drain, and toss with a little oil.",
+      "Heat oil in a wok on high heat, toss in minced garlic and julienned vegetables.",
+      "Stir-fry for 3 minutes keeping them crunchy.",
+      "Add noodles, soy sauce, vinegar, salt, and pepper, tossing well on high flame."
+    ],
+    "nutrition_per_serving": {"calories": 350, "protein_g": 8, "carbs_g": 58, "fat_g": 10, "fiber_g": 4}
+  },
+  {
+    "id": "R037",
+    "name": "Mango Lassi",
+    "cuisine": "Indian",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "gluten-free", "quick"],
+    "time_minutes": 5,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "yogurt", "qty": 1.5, "unit": "cup"},
+      {"item": "mango pulp", "qty": 1, "unit": "cup"},
+      {"item": "sugar", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "cardamom powder", "qty": 0.25, "unit": "tsp"},
+      {"item": "pistachio", "qty": 4, "unit": "pieces"}
+    ],
+    "steps": [
+      "Add yogurt, mango pulp, sugar, and cardamom powder to a blender.",
+      "Blend until smooth and frothy.",
+      "Pour into glasses and top with chopped pistachios."
+    ],
+    "nutrition_per_serving": {"calories": 210, "protein_g": 6, "carbs_g": 38, "fat_g": 4, "fiber_g": 1}
+  },
+  {
+    "id": "R038",
+    "name": "Jeera Rice",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free", "quick"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 1, "unit": "cup"},
+      {"item": "cumin seeds", "qty": 1, "unit": "tsp"},
+      {"item": "ghee", "qty": 1.5, "unit": "tbsp"},
+      {"item": "water", "qty": 2, "unit": "cup"}
+    ],
+    "optional_ingredients": [
+      {"item": "bay leaf", "qty": 1, "unit": "piece"},
+      {"item": "coriander", "qty": 1, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Rinse and soak rice for 10 minutes.",
+      "Heat ghee in a pot, add cumin seeds and bay leaf until they crackle.",
+      "Add drained rice, water, and salt, then bring to a boil.",
+      "Cover and simmer on low for 12 minutes, garnish with coriander."
+    ],
+    "nutrition_per_serving": {"calories": 270, "protein_g": 4, "carbs_g": 48, "fat_g": 7, "fiber_g": 1}
+  },
+  {
+    "id": "R039",
+    "name": "Malai Kofta",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian"],
+    "time_minutes": 50,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "paneer", "qty": 150, "unit": "g"},
+      {"item": "potato", "qty": 2, "unit": "medium"},
+      {"item": "tomato", "qty": 3, "unit": "medium"},
+      {"item": "cream", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "cashew", "qty": 10, "unit": "pieces"},
+      {"item": "cornflour", "qty": 2, "unit": "tbsp"},
+      {"item": "butter", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Mash boiled potatoes and grated paneer with cornflour, shape into balls, and shallow fry until golden.",
+      "Blend boiled tomatoes, onions, and cashews into a smooth paste.",
+      "Simmer the gravy with butter and cream until rich.",
+      "Pour hot gravy over the koftas right before serving."
+    ],
+    "nutrition_per_serving": {"calories": 440, "protein_g": 12, "carbs_g": 28, "fat_g": 31, "fiber_g": 4}
+  },
+  {
+    "id": "R040",
+    "name": "Idli Sambar",
+    "cuisine": "South Indian",
+    "meal_type": ["breakfast"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "idli", "qty": 4, "unit": "pieces"},
+      {"item": "toor dal", "qty": 0.5, "unit": "cup"},
+      {"item": "mixed vegetables", "qty": 1, "unit": "cup"},
+      {"item": "tamarind", "qty": 1, "unit": "tsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "sambar powder", "qty": 1, "unit": "tbsp"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "mustard seeds", "qty": 0.5, "unit": "tsp"}
+    ],
+    "steps": [
+      "Cook toor dal until soft and mash well.",
+      "Boil mixed vegetables with tamarind extract, sambar powder, and salt until tender.",
+      "Mix the cooked dal into the vegetables and simmer for 5 minutes.",
+      "Temper with mustard seeds and curry leaves, then pour over hot idlis."
+    ],
+    "nutrition_per_serving": {"calories": 290, "protein_g": 11, "carbs_g": 52, "fat_g": 4, "fiber_g": 7}
+  },
+  {
+    "id": "R041",
+    "name": "White Sauce Pasta",
+    "cuisine": "Italian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian"],
+    "time_minutes": 25,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "pasta", "qty": 200, "unit": "g"},
+      {"item": "milk", "qty": 1.5, "unit": "cup"},
+      {"item": "butter", "qty": 2, "unit": "tbsp"},
+      {"item": "wheat flour", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "cheese", "qty": 40, "unit": "g"},
+      {"item": "garlic", "qty": 2, "unit": "cloves"},
+      {"item": "capsicum", "qty": 0.5, "unit": "medium"}
+    ],
+    "steps": [
+      "Boil pasta until al dente and drain.",
+      "Melt butter in a pan, add flour, and stir for 1 minute without browning.",
+      "Gradually whisk in milk to form a smooth white sauce, then add cheese and garlic.",
+      "Toss in the cooked pasta and veggies, mix well, and serve hot."
+    ],
+    "nutrition_per_serving": {"calories": 460, "protein_g": 14, "carbs_g": 62, "fat_g": 18, "fiber_g": 4}
+  },
+  {
+    "id": "R042",
+    "name": "Chilli Paneer",
+    "cuisine": "Chinese",
+    "meal_type": ["lunch", "dinner", "snack"],
+    "diet_tags": ["vegetarian", "high-protein"],
+    "time_minutes": 25,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "paneer", "qty": 200, "unit": "g"},
+      {"item": "capsicum", "qty": 1, "unit": "medium"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "chilli sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "spring onion", "qty": 2, "unit": "stalks"}
+    ],
+    "steps": [
+      "Cut paneer into cubes and shallow fry until golden edges form.",
+      "In a wok, stir-fry sliced onions and capsicum on high heat.",
+      "Add soy sauce, chilli sauce, and a splash of water.",
+      "Toss in the paneer cubes, mix thoroughly, and garnish with spring onion."
+    ],
+    "nutrition_per_serving": {"calories": 390, "protein_g": 19, "carbs_g": 12, "fat_g": 30, "fiber_g": 3}
+  },
+  {
+    "id": "R043",
+    "name": "French Toast",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast"],
+    "diet_tags": ["vegetarian", "eggetarian", "quick"],
+    "time_minutes": 10,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "bread", "qty": 2, "unit": "slices"},
+      {"item": "egg", "qty": 1, "unit": "piece"},
+      {"item": "milk", "qty": 0.25, "unit": "cup"},
+      {"item": "butter", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "honey", "qty": 1, "unit": "tsp"},
+      {"item": "cinnamon", "qty": 0.25, "unit": "tsp"}
+    ],
+    "steps": [
+      "Whisk egg, milk, and cinnamon together in a shallow dish.",
+      "Dip bread slices into the mixture until soaked through.",
+      "Cook on a buttered pan over medium heat for 2-3 minutes per side until golden brown.",
+      "Serve hot drizzled with honey."
+    ],
+    "nutrition_per_serving": {"calories": 280, "protein_g": 10, "carbs_g": 30, "fat_g": 13, "fiber_g": 2}
+  },
+  {
+    "id": "R044",
+    "name": "Moong Dal Khichdi",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "gluten-free", "quick"],
+    "time_minutes": 25,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "rice", "qty": 0.5, "unit": "cup"},
+      {"item": "yellow moong dal", "qty": 0.5, "unit": "cup"},
+      {"item": "ghee", "qty": 1.5, "unit": "tbsp"},
+      {"item": "water", "qty": 3, "unit": "cup"}
+    ],
+    "optional_ingredients": [
+      {"item": "cumin seeds", "qty": 1, "unit": "tsp"},
+      {"item": "turmeric", "qty": 0.5, "unit": "tsp"},
+      {"item": "ginger", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Wash rice and moong dal together thoroughly.",
+      "Pressure cook with water, turmeric, ginger, and salt for 4 whistles.",
+      "Temper with cumin seeds in hot ghee and stir into the cooked khichdi.",
+      "Serve warm with yogurt or pickle."
+    ],
+    "nutrition_per_serving": {"calories": 290, "protein_g": 10, "carbs_g": 48, "fat_g": 7, "fiber_g": 4}
+  },
+  {
+    "id": "R045",
+    "name": "Sweet Corn Soup",
+    "cuisine": "Chinese",
+    "meal_type": ["dinner", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "low-calorie", "quick"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "sweet corn", "qty": 1, "unit": "cup"},
+      {"item": "carrot", "qty": 0.5, "unit": "medium"},
+      {"item": "oil", "qty": 1, "unit": "tbsp"},
+      {"item": "water", "qty": 3, "unit": "cup"}
+    ],
+    "optional_ingredients": [
+      {"item": "soy sauce", "qty": 1, "unit": "tsp"},
+      {"item": "pepper", "qty": 0.5, "unit": "tsp"},
+      {"item": "spring onion", "qty": 1, "unit": "stalk"}
+    ],
+    "steps": [
+      "Crush half of the sweet corn kernels into a coarse paste.",
+      "Sauté diced carrots and whole corn kernels in oil.",
+      "Add water, salt, pepper, and simmer for 10 minutes.",
+      "Stir in soy sauce and garnish with spring onions."
+    ],
+    "nutrition_per_serving": {"calories": 130, "protein_g": 4, "carbs_g": 22, "fat_g": 4, "fiber_g": 3}
+  },
+  {
+    "id": "R046",
+    "name": "Peanut Butter Toast",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "quick", "high-protein"],
+    "time_minutes": 5,
+    "difficulty": "Easy",
+    "base_servings": 1,
+    "core_ingredients": [
+      {"item": "bread", "qty": 2, "unit": "slices"},
+      {"item": "peanut butter", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "banana", "qty": 1, "unit": "piece"},
+      {"item": "chia seeds", "qty": 1, "unit": "tsp"},
+      {"item": "honey", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Toast bread slices until crisp and golden.",
+      "Spread an even layer of peanut butter on each slice.",
+      "Top with sliced banana and a drizzle of honey or chia seeds."
+    ],
+    "nutrition_per_serving": {"calories": 310, "protein_g": 11, "carbs_g": 34, "fat_g": 16, "fiber_g": 5}
+  },
+  {
+    "id": "R047",
+    "name": "Caesar Salad",
+    "cuisine": "Continental",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "quick"],
+    "time_minutes": 15,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "lettuce", "qty": 3, "unit": "cup"},
+      {"item": "bread", "qty": 2, "unit": "slices"},
+      {"item": "cheese", "qty": 30, "unit": "g"},
+      {"item": "olive oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "garlic", "qty": 2, "unit": "cloves"},
+      {"item": "lemon", "qty": 0.5, "unit": "piece"},
+      {"item": "yogurt", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Cut bread into cubes, toss with olive oil and garlic, then bake until crisp croutons form.",
+      "Toss torn lettuce leaves in a bowl.",
+      "Whisk yogurt, lemon juice, oil, and cheese to make a dressing, then pour over lettuce.",
+      "Top with crunchy croutons and grated cheese."
+    ],
+    "nutrition_per_serving": {"calories": 290, "protein_g": 8, "carbs_g": 24, "fat_g": 18, "fiber_g": 3}
+  },
+  {
+    "id": "R048",
+    "name": "Methi Paratha",
+    "cuisine": "North Indian",
+    "meal_type": ["breakfast", "lunch"],
+    "diet_tags": ["vegetarian"],
+    "time_minutes": 30,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "wheat flour", "qty": 2, "unit": "cup"},
+      {"item": "fenugreek leaves", "qty": 1, "unit": "cup"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "yogurt", "qty": 2, "unit": "tbsp"},
+      {"item": "green chilli", "qty": 1, "unit": "piece"},
+      {"item": "cumin", "qty": 1, "unit": "tsp"}
+    ],
+    "steps": [
+      "Wash and finely chop fresh fenugreek leaves.",
+      "Knead wheat flour with chopped fenugreek, yogurt, spices, and water into a smooth dough.",
+      "Roll out portions of the dough into flat rounds.",
+      "Cook on a hot tawa with oil on both sides until golden brown."
+    ],
+    "nutrition_per_serving": {"calories": 320, "protein_g": 9, "carbs_g": 50, "fat_g": 10, "fiber_g": 7}
+  },
+  {
+    "id": "R049",
+    "name": "Fruit Custard",
+    "cuisine": "Continental",
+    "meal_type": ["snack"],
+    "diet_tags": ["vegetarian", "quick"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "milk", "qty": 2, "unit": "cup"},
+      {"item": "custard powder", "qty": 2, "unit": "tbsp"},
+      {"item": "sugar", "qty": 3, "unit": "tbsp"},
+      {"item": "apple", "qty": 1, "unit": "piece"}
+    ],
+    "optional_ingredients": [
+      {"item": "banana", "qty": 1, "unit": "piece"},
+      {"item": "pomegranate", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Mix custard powder with a little cold milk to form a paste.",
+      "Boil the remaining milk with sugar, then slowly stir in the custard paste.",
+      "Simmer until thick, then let it cool completely.",
+      "Fold in chopped fruits before serving chilled."
+    ],
+    "nutrition_per_serving": {"calories": 210, "protein_g": 6, "carbs_g": 36, "fat_g": 4, "fiber_g": 2}
+  },
+  {
+    "id": "R050",
+    "name": "Stuffed Capsicum",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free"],
+    "time_minutes": 35,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "capsicum", "qty": 3, "unit": "medium"},
+      {"item": "potato", "qty": 2, "unit": "medium"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "coriander", "qty": 2, "unit": "tbsp"},
+      {"item": "peanut powder", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Boil, peel, and mash potatoes, then mix with sautéed onions and spices.",
+      "Hollow out the capsicums by removing the top and seeds.",
+      "Stuff the potato filling tightly inside each capsicum.",
+      "Cook in a covered pan with oil on medium-low heat, turning occasionally until tender."
+    ],
+    "nutrition_per_serving": {"calories": 220, "protein_g": 5, "carbs_g": 30, "fat_g": 9, "fiber_g": 6}
+  },
+  {
+    "id": "R051",
+    "name": "Vermicelli Upma",
+    "cuisine": "South Indian",
+    "meal_type": ["breakfast"],
+    "diet_tags": ["vegetarian", "vegan", "quick"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "vermicelli", "qty": 1, "unit": "cup"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "green chilli", "qty": 2, "unit": "pieces"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "peanuts", "qty": 2, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Dry roast vermicelli until golden brown and set aside.",
+      "Sauté onions, carrots, and green chillies in oil with mustard seeds.",
+      "Pour in 2 cups of water with salt and bring to a boil.",
+      "Add the roasted vermicelli, cover, and cook on low heat until water is absorbed."
+    ],
+    "nutrition_per_serving": {"calories": 280, "protein_g": 7, "carbs_g": 46, "fat_g": 8, "fiber_g": 3}
+  },
+  {
+    "id": "R052",
+    "name": "Prawn Curry",
+    "cuisine": "Coastal Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["non-vegetarian", "high-protein", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "prawns", "qty": 300, "unit": "g"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "tomato", "qty": 2, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "coconut milk", "qty": 0.5, "unit": "cup"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "curry leaves", "qty": 10, "unit": "leaves"}
+    ],
+    "steps": [
+      "Clean and devein the prawns.",
+      "Sauté chopped onions, garlic, and curry leaves in oil until golden.",
+      "Add chopped tomatoes and spices, cooking until pulpy.",
+      "Add prawns and coconut milk, simmering gently for 5 minutes until prawns are cooked."
+    ],
+    "nutrition_per_serving": {"calories": 310, "protein_g": 28, "carbs_g": 8, "fat_g": 18, "fiber_g": 2}
+  },
+  {
+    "id": "R053",
+    "name": "Rava Kesari",
+    "cuisine": "South Indian",
+    "meal_type": ["snack"],
+    "diet_tags": ["vegetarian", "quick"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "semolina", "qty": 1, "unit": "cup"},
+      {"item": "sugar", "qty": 0.75, "unit": "cup"},
+      {"item": "ghee", "qty": 3, "unit": "tbsp"},
+      {"item": "water", "qty": 2.5, "unit": "cup"}
+    ],
+    "optional_ingredients": [
+      {"item": "cashew", "qty": 10, "unit": "pieces"},
+      {"item": "cardamom powder", "qty": 0.5, "unit": "tsp"},
+      {"item": " saffron", "qty": 1, "unit": "pinch"}
+    ],
+    "steps": [
+      "Fry cashews in ghee until golden, remove and set aside.",
+      "Roast semolina in the remaining ghee until fragrant.",
+      "Boil water with saffron and slowly pour into the semolina, stirring to avoid lumps.",
+      "Add sugar and cardamom powder, stirring continuously until it thickens."
+    ],
+    "nutrition_per_serving": {"calories": 340, "protein_g": 5, "carbs_g": 56, "fat_g": 12, "fiber_g": 2}
+  },
+  {
+    "id": "R054",
+    "name": "Mushroom Soup",
+    "cuisine": "Continental",
+    "meal_type": ["dinner", "snack"],
+    "diet_tags": ["vegetarian", "low-calorie"],
+    "time_minutes": 25,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "mushroom", "qty": 200, "unit": "g"},
+      {"item": "onion", "qty": 0.5, "unit": "medium"},
+      {"item": "garlic", "qty": 3, "unit": "cloves"},
+      {"item": "butter", "qty": 1.5, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "milk", "qty": 0.5, "unit": "cup"},
+      {"item": "wheat flour", "qty": 1, "unit": "tbsp"},
+      {"item": "pepper", "qty": 0.5, "unit": "tsp"}
+    ],
+    "steps": [
+      "Sauté chopped garlic, onions, and mushrooms in butter until tender.",
+      "Blend half of the mushroom mixture into a smooth puree.",
+      "Return puree to the pot with milk, flour, and 1.5 cups of water.",
+      "Simmer for 10 minutes, season with pepper, and serve hot."
+    ],
+    "nutrition_per_serving": {"calories": 160, "protein_g": 5, "carbs_g": 11, "fat_g": 11, "fiber_g": 2}
+  },
+  {
+    "id": "R055",
+    "name": "Avial",
+    "cuisine": "South Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "mixed vegetables", "qty": 2, "unit": "cup"},
+      {"item": "coconut", "qty": 0.5, "unit": "cup"},
+      {"item": "yogurt", "qty": 0.5, "unit": "cup"},
+      {"item": "coconut oil", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "green chilli", "qty": 2, "unit": "pieces"},
+      {"item": "cumin", "qty": 0.5, "unit": "tsp"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"}
+    ],
+    "steps": [
+      "Cut mixed vegetables into long uniform strips and boil with turmeric and salt until tender.",
+      "Grind coconut, cumin, and green chillies into a coarse paste.",
+      "Mix the paste into the cooked vegetables and simmer for 3 minutes.",
+      "Turn off the heat, stir in beaten yogurt and coconut oil, and garnish with curry leaves."
+    ],
+    "nutrition_per_serving": {"calories": 210, "protein_g": 4, "carbs_g": 16, "fat_g": 15, "fiber_g": 5}
+  },
+  {
+    "id": "R056",
+    "name": "Veg Manchurian",
+    "cuisine": "Chinese",
+    "meal_type": ["lunch", "dinner", "snack"],
+    "diet_tags": ["vegetarian"],
+    "time_minutes": 40,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "cabbage", "qty": 2, "unit": "cup"},
+      {"item": "carrot", "qty": 1, "unit": "medium"},
+      {"item": "wheat flour", "qty": 3, "unit": "tbsp"},
+      {"item": "oil", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "soy sauce", "qty": 1, "unit": "tbsp"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"},
+      {"item": "spring onion", "qty": 2, "unit": "stalks"}
+    ],
+    "steps": [
+      "Mix finely chopped cabbage, carrot, flour, salt, and shape into small balls.",
+      "Shallow fry the vegetable balls until crisp and golden brown.",
+      "In a pan, sauté minced garlic, spring onions, and soy sauce with water.",
+      "Add the fried balls to the sauce and simmer for 2 minutes before serving."
+    ],
+    "nutrition_per_serving": {"calories": 240, "protein_g": 5, "carbs_g": 26, "fat_g": 13, "fiber_g": 4}
+  },
+  {
+    "id": "R057",
+    "name": "Chicken Biryani",
+    "cuisine": "Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["non-vegetarian", "high-protein"],
+    "time_minutes": 50,
+    "difficulty": "Medium",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "chicken", "qty": 500, "unit": "g"},
+      {"item": "rice", "qty": 1.5, "unit": "cup"},
+      {"item": "onion", "qty": 2, "unit": "medium"},
+      {"item": "ghee", "qty": 3, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "yogurt", "qty": 0.5, "unit": "cup"},
+      {"item": "mint leaves", "qty": 0.25, "unit": "cup"},
+      {"item": "ginger garlic paste", "qty": 1, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Marinate chicken with yogurt, ginger-garlic paste, and spices for 30 minutes.",
+      "Parboil rice with whole spices until 70% cooked.",
+      "Layer the marinated chicken and rice in a heavy-bottomed pot, sealing the lid tightly.",
+      "Cook on low flame for 25 minutes, then gently fluff and serve."
+    ],
+    "nutrition_per_serving": {"calories": 520, "protein_g": 38, "carbs_g": 52, "fat_g": 18, "fiber_g": 2}
+  },
+  {
+    "id": "R058",
+    "name": "Masala Dosa",
+    "cuisine": "South Indian",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "vegan", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Medium",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "dosa batter", "qty": 2, "unit": "cup"},
+      {"item": "potato", "qty": 2, "unit": "medium"},
+      {"item": "onion", "qty": 1, "unit": "medium"},
+      {"item": "oil", "qty": 2, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "mustard seeds", "qty": 0.5, "unit": "tsp"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "green chilli", "qty": 2, "unit": "pieces"}
+    ],
+    "steps": [
+      "Boil, peel, and mash potatoes, then temper with mustard seeds, curry leaves, onions, and turmeric.",
+      "Heat a non-stick griddle, pour a ladle of dosa batter, and spread thinly in a circle.",
+      "Drizzle oil around the edges and cook until crisp.",
+      "Place the potato masala in the center, fold over, and serve hot."
+    ],
+    "nutrition_per_serving": {"calories": 310, "protein_g": 6, "carbs_g": 54, "fat_g": 8, "fiber_g": 4}
+  },
+  {
+    "id": "R059",
+    "name": "Sambar",
+    "cuisine": "South Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan", "high-protein", "gluten-free"],
+    "time_minutes": 30,
+    "difficulty": "Easy",
+    "base_servings": 3,
+    "core_ingredients": [
+      {"item": "toor dal", "qty": 1, "unit": "cup"},
+      {"item": "mixed vegetables", "qty": 1.5, "unit": "cup"},
+      {"item": "tamarind", "qty": 1, "unit": "tsp"},
+      {"item": "oil", "qty": 1, "unit": "tbsp"}
+    ],
+    "optional_ingredients": [
+      {"item": "sambar powder", "qty": 1.5, "unit": "tbsp"},
+      {"item": "curry leaves", "qty": 8, "unit": "leaves"},
+      {"item": "mustard seeds", "qty": 0.5, "unit": "tsp"}
+    ],
+    "steps": [
+      "Cook toor dal until soft and mash it.",
+      "Boil mixed vegetables with tamarind extract, sambar powder, salt, and water until tender.",
+      "Add the mashed dal to the vegetable mixture and simmer for 5 minutes.",
+      "Temper with mustard seeds and curry leaves before serving."
+    ],
+    "nutrition_per_serving": {"calories": 190, "protein_g": 10, "carbs_g": 32, "fat_g": 3, "fiber_g": 7}
+  },
+  {
+    "id": "R060",
+    "name": "Phulka Roti",
+    "cuisine": "North Indian",
+    "meal_type": ["lunch", "dinner"],
+    "diet_tags": ["vegetarian", "vegan"],
+    "time_minutes": 20,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "wheat flour", "qty": 1.5, "unit": "cup"},
+      {"item": "water", "qty": 0.5, "unit": "cup"}
+    ],
+    "optional_ingredients": [
+      {"item": "butter", "qty": 1, "unit": "tbsp"}
+    ],
+    "steps": [
+      "Knead wheat flour and water into a smooth, pliable dough, and rest for 15 minutes.",
+      "Divide into small balls and roll out into thin circles.",
+      "Cook on a hot tawa until small bubbles appear, flip, and cook the other side.",
+      "Transfer directly onto an open flame until it puffs up, then brush with butter if desired."
+    ],
+    "nutrition_per_serving": {"calories": 180, "protein_g": 5, "carbs_g": 36, "fat_g": 2, "fiber_g": 5}
+  },
+  {
+    "id": "R061",
+    "name": "Garlic Bread",
+    "cuisine": "Continental",
+    "meal_type": ["breakfast", "snack"],
+    "diet_tags": ["vegetarian", "quick"],
+    "time_minutes": 10,
+    "difficulty": "Easy",
+    "base_servings": 2,
+    "core_ingredients": [
+      {"item": "bread", "qty": 4, "unit": "slices"},
+      {"item": "butter", "qty": 2, "unit": "tbsp"},
+      {"item": "garlic", "qty": 4, "unit": "cloves"}
+    ],
+    "optional_ingredients": [
+      {"item": "cheese", "qty": 30, "unit": "g"},
+      {"item": "oregano", "qty": 0.5, "unit": "tsp"}
+    ],
+    "steps": [
+      "Mix softened butter with freshly minced garlic and oregano.",
+      "Spread the garlic butter generously over the bread slices.",
+      "Top with cheese if desired and toast on a pan or bake until golden and crisp.",
+      "Cut into triangles and serve warm."
+    ],
+    "nutrition_per_serving": {"calories": 240, "protein_g": 5, "carbs_g": 26, "fat_g": 13, "fiber_g": 2}
   }
 ]
